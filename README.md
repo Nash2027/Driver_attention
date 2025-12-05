@@ -4,6 +4,8 @@ Ce projet utilise un modèle MobileNetV2 entraîné pour détecter si un conduct
 Il combine deep learning et Mediapipe pour vérifier la présence du visage et le comptage des mains, ce qui permet de corriger certaines prédictions.
 
  Dataset **StateFarm Distracted Driver** téléchargé et placé dans le dossier `data/`
+ https://www.kaggle.com/c/state-FARM-distracted-driver-detection
+ Dataset a télécharge avant, et adapté le chemin sur Colab si besoin
 
  ## Utilisation
 
