@@ -1,29 +1,36 @@
 # Driver_attention
 
-Ce projet utilise un modèle MobileNetV2 entraîné pour détecter si un conducteur est **attentif** ou **distrait**.  
-Il combine deep learning et Mediapipe pour vérifier la présence du visage et le comptage des mains, ce qui permet de corriger certaines prédictions.
+This project uses a **MobileNetV2** model trained to detect whether a driver is **attentive** or **distracted**.  
+It combines deep learning with **MediaPipe** to verify face detection and hand counting, allowing correction of certain inconsistent predictions.
 
- Dataset **StateFarm Distracted Driver** téléchargé et placé dans le dossier `data/`
- https://www.kaggle.com/c/state-FARM-distracted-driver-detection
- Dataset a télécharge avant, et adapté le chemin sur Colab si besoin
+The project uses the **StateFarm Distracted Driver** dataset, which must be downloaded manually and placed inside the `data/` directory:
+https://www.kaggle.com/c/state-farm-distracted-driver-detection
 
- ## Utilisation
+Make sure to download the dataset beforehand and update the path in Google Colab if necessary.
 
-Le projet est prévu pour être utilisé directement sur **Google Colab**.  
-Pour tester ou entraîner le modèle, il suffit de lancer les cellules du notebook **une par une**.
+---
 
-1. Ouvrir le notebook `driver_distraction.ipynb` sur Colab.
-2. Monter Google Drive si besoin pour accéder aux images ou au dataset.
-3. Exécuter les cellules dans l’ordre indiqué (prétraitement, entraînement, tests).
-4. Vous pouvez uploader vos propres images pour tester le modèle.
+##  Usage
 
-## Résultats
+The project is designed to be used directly on **Google Colab**.  
+To test or train the model, simply run each cell of the notebook in order.
 
-- Précision finale sur validation : ~92,7%.
-- Matrice de confusion et courbes d’évolution des performances disponibles dans le notebook.
+1. Open the `driver_distraction.ipynb` notebook on Google Colab.
+2. Mount Google Drive if needed to access images or the dataset.
+3. Run all cells in the recommended order (preprocessing, training, testing).
+4. You can upload your own images to test the model.
 
-## Notes
+---
 
-- Le notebook contient toutes les cellules pour l’entraînement, l’évaluation et les tests.  
-- Assurez-vous d’avoir téléchargé le dataset avant de lancer l’exécution.  
-- Le modèle corrige certaines prédictions grâce à Mediapipe (vérification visage/mains).
+##  Results
+
+- Final validation accuracy: **~92.7%**
+- The confusion matrix and performance curves are available in the notebook.
+
+---
+
+##  Notes
+
+- The notebook contains all steps needed for training, evaluation, and testing.  
+- Make sure the dataset is downloaded before running the notebook.  
+- The model corrects certain predictions using MediaPipe (face/hands consistency check).
